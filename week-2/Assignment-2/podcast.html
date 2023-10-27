@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a podcast page." />
+  <meta name="keywords" content="HTML, CSS, web development, podcast" />
+  <meta name="author" content="Dorcas Samuel" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="media/favicon.ico" rel="icon" type="image/x-icon" />
+  <title>Podcast Assignment</title>
+  <style>
+    body {
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    p {
+      line-height: 1.5;
+      word-spacing: 2px;
+    }
+
+    .container {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .top-content {
+      margin-left: 50px;
+    }
+
+    .video-container {
+      border: 5px yelllow solid;
+      margin-left: 30px;
+    }
+
+    video {
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    video::-webkit-media-controls-panel {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    video:hover::-webkit-media-controls-panel {
+      opacity: 1;
+    }
+
+    .info-container {
+      display: flex;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .timestamp {
+      width: 8%;
+      margin-top: 5px;
+      opacity: 0.8;
+    }
+
+    .speaker-info {
+      width: 80%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-content">
+      <h1 style="margin: 0">Faustina <> John (User interview)</h1>
+      <p style="opacity: 0.5; margin: 0">Created on Sep 17, 11:54 AM</p>
+
+      <p>
+        <strong>Project:</strong>
+        <span style="opacity: 0.8">Staying connected in a post-pandemic world</span>
+      </p>
+      <p>
+        <strong>Moderator:</strong>
+        <span style="opacity: 0.5">Speaker 1</span>
+      </p>
+      <p>
+        <strong>Participant:</strong>
+        <span style="opacity: 0.5">Speaker 2</span>
+      </p>
+    </div>
+
+    <div class="video-container">
+      <video controls width="500" poster="media/podcast.webp">
+        <source src="media/podcast.mp4" type="video/webm" />
+      </video>
+    </div>
+
+    <div class="info-container">
+      <div class="timestamp">
+        <p>00:05</p>
+      </div>
+      <div class="speaker-info">
+        <h4>Speaker 1</h4>
+        <p>
+          How do you feel about the number of video calls you and your team
+          are conducting?
+        </p>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="timestamp">
+        <p>00:05</p>
+      </div>
+      <div class="speaker-info">
+        <h4>Speaker 2</h4>
+        <p>
+          The number of video calls has grown exponentially since our team
+          moved to a remote environment. I feel emotionally and physically
+          drained by the numbers of calls I received. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Sint aliquid consequatur eos,
+          veritatis culpa alias omnis vero nostrum totam exercitationem aut
+          natus placeat praesentium optio voluptas doloribus provident quo
+          quibusdam.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
