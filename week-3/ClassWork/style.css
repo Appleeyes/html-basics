@@ -1,0 +1,107 @@
+body {
+    background-color: purple;
+    font-family: 'Lato';
+}
+
+#video-container {
+    position: relative;
+}
+
+.video-player-screen video{
+    /* background-color: aqua; */
+    border-radius: 15px;
+}
+
+.video-actions {
+    width: 300px;
+    position: absolute;
+    bottom: 2rem;
+    left: 40%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: #fff;
+}
+
+.video-actions svg{
+    /* width: 300px;
+    position: absolute;
+    bottom: 2rem;
+    left: 40%;
+    display: flex;
+    gap: 10px; */
+    fill: #fff;
+}
+
+#video-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#video-control .control {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#video-control .control svg{
+    width: 40px;
+    height: 20px;
+    background-color: #F7F7FE;
+    fill: #4A5BEE;
+    padding: 15px 4px;
+    border-radius: 10px;
+}
+
+video{
+    width: 100%;
+}
+
+.video-btn {
+    background-color: black; 
+    color: white; 
+    border: none;
+    width: 35px;
+    height: 35px;
+}
+
+.mic-btn {
+    background-color: black; 
+    color: white; 
+    border: none;
+    width: 35px;
+    height: 35px;
+}
+
+.leave-btn {
+    border: none;
+    background-color: red; 
+    color: #fff; 
+    width: fit-content;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    line-height: 13px;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.leave-btn svg {
+    transform: rotate(134deg);
+}
