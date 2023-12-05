@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: gainsboro;
+    /* line-height: 1.5; */
+}
+
+p{
+    opacity: 0.6;
+}
+
+.container{
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "a a b e"
+        "c d d e";
+    grid-template-rows: auto auto;
+    align-items: start;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.details .image {
+    margin-right: 1rem;
+}
+
+.details img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.details .title h2,
+.details .title p {
+    margin: 0;
+}
+
+.first{
+    background-color: rgb(128, 22, 128);
+    color: #fff;
+    grid-area: a;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem rgb(153, 149, 149);
+}
+
+.second{
+    background-color: rgb(58, 58, 77);
+    color: #fff;
+    grid-area: b;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem rgb(153, 149, 149);
+}
+
+.third{
+    background-color: #fff;
+    color: #000;
+    grid-area: c;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem rgb(153, 149, 149);
+}
+
+.fourth{
+    background-color: rgb(15, 15, 51);
+    color: #fff;
+    grid-area: d;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem rgb(153, 149, 149);
+}
+
+.fifth{
+    background-color: #fff;
+    color: #000;
+    grid-area: e;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem rgb(153, 149, 149);
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        grid-template-areas: 
+        "a a"
+        "b b"
+        "c c"
+        "d d"
+        "e e";
+    }
+}
+
+@media screen and (min-width: 780){
+    .container{
+        grid-template-areas:
+        "a a a a"
+        "b b e e"
+        "c c e e"
+        "d d d d";
+    }
+}

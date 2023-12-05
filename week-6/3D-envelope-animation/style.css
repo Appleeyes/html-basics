@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333232;
+}
+
+.top-container{
+    display: grid;
+    place-items: center;
+}
+
+.top-container > .container{
+    background: blue;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.container > .envelope{
+    position: relative;
+    width: 300px;
+    height: 230px;
+}
+
+.container > .envelope::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    border-top: 130px solid #ecdeb8;
+    border-right: 150px solid transparent;
+    border-left: 150px solid transparent;
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 0.7s;
+}
+
+.envelope > .card {
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    width: 54%;
+    height: 80%;
+    background: #fff;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px 10px;
+}
+
+.envelope > .card > p{
+    font-size: 10px;
+    text-align: left;
+}
+
+.click{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: red;
+    z-index: 4;
+    transform: translate(-50%, -20%) rotate(45deg);
+    transition: transform 0.5s ease-in-out 1s;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.click::before,
+.click::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.click::before{
+    top: -7.5px;
+}
+
+.click::after{
+    right: 7.5px;
+}
+
+.flap > .envelope:before{
+    tra
+}
